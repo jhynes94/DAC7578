@@ -20,6 +20,7 @@ class DAC7578
         void writeDAC(uint16_t value, uint8_t DAC);
     private:
         uint32_t _deviceAddress;
+        byte CA = 0x30;
 };
 
 #endif

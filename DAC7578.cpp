@@ -5,6 +5,15 @@
 #include "DAC7578.h"
 
 
+unsigned createMask(unsigned a, unsigned b)
+{
+   unsigned r = 0;
+   for (unsigned i=a; i<=b; i++)
+       r |= 1 << i;
+
+   return r;
+}
+
 
 DAC7578::DAC7578(uint32_t newDeviceAddress)
 {
